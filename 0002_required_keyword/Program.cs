@@ -4,7 +4,7 @@ namespace _0002_required_keyword
 {
     class EntryClass
     {
-        public class Person
+        public record class Person
         {
             public required string FirstName { get; init; }
             public required string LastName { get; init; }
@@ -22,7 +22,7 @@ namespace _0002_required_keyword
             }
         }
 
-        public class Employee : Person
+        public record class Employee : Person
         {
             public required int Salary { get; init; }
 

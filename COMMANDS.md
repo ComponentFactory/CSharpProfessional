@@ -8,8 +8,8 @@ dotnet new gitignore
 copied from github dotnet/runtime/.editorconfig
 
 # Add a new project, example
-dotnet new console -o ./0001_string_literals   
-dotnet sln add ./0001_string_literals   
+dotnet new console -o ./0003_record_internals
+dotnet sln add ./0003_record_internals
 
 # CodeLens
 File -> Preferences -> Settings -> csharp.referencesCodeLens.enabled
