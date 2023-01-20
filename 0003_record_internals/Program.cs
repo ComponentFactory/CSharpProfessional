@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Text;
+﻿using System.Text;
 
 namespace __0003_record_internals
 {
@@ -33,11 +32,11 @@ namespace __0003_record_internals
 
             public override string ToString()
             {
-                StringBuilder builder = new StringBuilder();
+                StringBuilder builder = new();
                 builder.Append(nameof(Person));
                 builder.Append(" { ");
 
-                if (this.PrintMembers(builder))
+                if (PrintMembers(builder))
                     builder.Append(' ');
 
                 builder.Append('}');
@@ -49,7 +48,7 @@ namespace __0003_record_internals
                 builder.Append("Name = ");
                 builder.Append(Name);
                 builder.Append(", Age = ");
-                builder.Append(Age.ToString());
+                builder.Append(Age);
                 return true;
             }       
 
@@ -60,7 +59,7 @@ namespace __0003_record_internals
 
             public override int GetHashCode()
             {
-                return (EqualityComparer<Type>.Default.GetHashCode(this.EqualityContract) * -1521134295 +
+                return (EqualityComparer<Type>.Default.GetHashCode(EqualityContract) * -1521134295 +
                         EqualityComparer<string>.Default.GetHashCode(_name)) * -1521134295 +
                         EqualityComparer<int>.Default.GetHashCode(_age);
             }            
@@ -86,7 +85,7 @@ namespace __0003_record_internals
                 if ((object?)left == (object?)right)
                     return true;
 
-                return (object?)left != null && left.Equals(right);
+                return left is not null && left.Equals(right);
             }
 
             public static bool operator !=(Person? left, Person? right)
@@ -96,8 +95,8 @@ namespace __0003_record_internals
 
             public void Deconstruct(out string name, out int age)
             {
-                name = this.Name;
-                age = this.Age;
+                name = Name;
+                age = Age;
             }
 
             public virtual Person Clone()
@@ -125,7 +124,7 @@ namespace __0003_record_internals
             Console.WriteLine($"john == jane : {john == jane}");
             Console.WriteLine($"john != jane : {john != jane}");
 
-            (var name, var age) = john;
+            (string? name, int age) = john;
             Console.WriteLine($"john destructor name:{name} age:{age}");        
 
             //-----------------------------------------------------
