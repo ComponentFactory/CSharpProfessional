@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0002_required_keyword", "00
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0003_record_internals", "0003_record_internals\0003_record_internals.csproj", "{65E2F891-D6BF-4D44-B5F6-03BDFFC40B26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0005_patterns", "0005_patterns\0005_patterns.csproj", "{B8E176CE-FE90-409C-99CE-FFF0B164C706}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{65E2F891-D6BF-4D44-B5F6-03BDFFC40B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65E2F891-D6BF-4D44-B5F6-03BDFFC40B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65E2F891-D6BF-4D44-B5F6-03BDFFC40B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E176CE-FE90-409C-99CE-FFF0B164C706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E176CE-FE90-409C-99CE-FFF0B164C706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E176CE-FE90-409C-99CE-FFF0B164C706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E176CE-FE90-409C-99CE-FFF0B164C706}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

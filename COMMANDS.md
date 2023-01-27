@@ -8,9 +8,9 @@ dotnet new gitignore
 copied from github dotnet/runtime/.editorconfig
 
 # Add a new project, example
-dotnet new console -o ./0004_syntactic_sugar
-dotnet sln add ./0004_syntactic_sugar
-cd ./0004_syntactic_sugar
+dotnet new console -o ./0005_patterns
+dotnet sln add ./0005_patterns
+cd ./0005_patterns
 
 # CodeLens
 File -> Preferences -> Settings -> csharp.referencesCodeLens.enabled
