@@ -2,7 +2,7 @@
 {
     public static class RedirectUrl
     {
-        public static string Redirect1(Uri uri)
+        public static string Redirect(Uri uri)
         {
             string[] segments = uri.Segments;
             if (segments.Length > 0)
@@ -27,17 +27,6 @@
                 }
             }
             return "/404";
-        }
-
-        public static string Redirect2(Uri uri)
-        {
-            return uri.Segments switch
-            {
-                ["/"] => "/home",
-                [.. , "product" or "item"] => "/showcase",
-                ["category", .. var rest] => string.Join("/", rest),
-                _ => "/404"
-            };
         }
     }
 }
