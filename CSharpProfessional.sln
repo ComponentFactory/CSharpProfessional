@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0001_string_literals", "0001_string_literals\0001_string_literals.csproj", "{B45B7D0E-71C0-4BB7-83AD-4D904115408B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0001_string_literals", "0001_string_literals\0001_string_literals.csproj", "{B45B7D0E-71C0-4BB7-83AD-4D904115408B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0002_required_keyword", "0002_required_keyword\0002_required_keyword.csproj", "{397C0A70-A7AE-4FA8-96C4-768765CB55A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0002_required_keyword", "0002_required_keyword\0002_required_keyword.csproj", "{397C0A70-A7AE-4FA8-96C4-768765CB55A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0003_record_internals", "0003_record_internals\0003_record_internals.csproj", "{65E2F891-D6BF-4D44-B5F6-03BDFFC40B26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0003_record_internals", "0003_record_internals\0003_record_internals.csproj", "{65E2F891-D6BF-4D44-B5F6-03BDFFC40B26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0005_patterns", "0005_patterns\0005_patterns.csproj", "{B8E176CE-FE90-409C-99CE-FFF0B164C706}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0005_patterns", "0005_patterns\0005_patterns.csproj", "{B8E176CE-FE90-409C-99CE-FFF0B164C706}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,7 +19,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B45B7D0E-71C0-4BB7-83AD-4D904115408B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B45B7D0E-71C0-4BB7-83AD-4D904115408B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B45B7D0E-71C0-4BB7-83AD-4D904115408B}.Release|Any CPU.ActiveCfg = Release|Any CPU
